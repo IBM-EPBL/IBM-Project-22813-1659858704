@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="Stylesheet" href="{{ url_for('static', filename='Signup.css') }}">
+</head>
+<body>
+    <nav>
+		<ul class="navigation">
+			<div class="brand"><img src="#https://images.app.goo.gl/MDvm6hu5AZraZUC76" alt="LOGO" /> 
+<!-- Making menu icon clickable to display the navigation menu on smaller screens -->
+				<i onclick="navToggle()" id="nav-icon" class="fa fa-navicon" style="font-size:24px"></i> 
+			</div>
+
+			<div id="toggle" class="nav-container">
+				<a class="left" href="/"><li>GO BACK HOME</li></a>
+			</div>
+		</ul>
+	</nav>
+<!-- NAVIGATION END HERE -->
+
+<section class="form">
+<div class="center">
+	<h1>JOIN OUR <b style="color: #7a44dd ;">NEWS TRACKING APPLICATION</b> TO KNOW ABOUT THE NEWS</h1>
+	<hr width="20%" style="border: 1px solid #6a29e4;">
+	<br>
+
+	<form action="">
+		<input class="name-surname" type="text" name="name" placeholder="firstname">
+		<input class="name-surname" type="text" name="surname" placeholder="lastname"><br>
+		<input type="text" name="email" placeholder="emailid"><br>
+         <br> <input type="password" name="password" placeholder="password"><br>
+		<input type="password" name="conf_password" placeholder="confirmpassword"><br>
+	
+		<button formaction="/">JOIN</button>
+		<p>Already have an account? <a href="/Login">Login Here</a></p>
+	</form>
+</div>
+
+</section>
+
+<!-- FOOTER STARTS HERE -->
+
+	<footer>
+		<div class="footer_container">
+			<p class="bottom_text">ONE TAP™ - Copyright © 2018 All Rights Reserved.</p>
+		</div>
+	</footer>
+
+<!-- FOOTER ENDS HERE -->
+</body>
+</html>
